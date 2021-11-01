@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Live Code</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Simple Live Code</h1>
+    <div class="codeEditor">
+        <textarea class="html" id="html-area" rows="12" cols="50" placeholder="Enter your HTML Code here"> </textarea>
+        <textarea class="css" id="css-area" rows="12" cols="50" placeholder="Enter your CSS Code here"> </textarea>
+        <textarea class="js" id="script-area" rows="12" cols="50" placeholder="Enter your JavaScript Code here"> </textarea>
+    </div>
+    <br>
+
+    <div>
+        <button class="btnRunCode" id="run" onclick="run()">Output</button>
+    </div>
+
+    <br>
+    <div class="outputEditor">
+        <iframe id="output-frame"></iframe>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
